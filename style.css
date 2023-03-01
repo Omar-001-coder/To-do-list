@@ -1,3 +1,69 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
 body{
     background-color: #ABABAB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:95vh ;
 }
+.container{
+    background-color: white;
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+form input{
+    background-color: black;
+    color: white;
+    padding: .5rem;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+
+    form button{
+        background-color:black;
+        color:white;
+        padding:.2rem;
+        font-size: 1.4rem;
+        height: 2.2rem;
+        width:2.2rem ;
+        border-radius: 50%;
+        margin-left: 1rem;
+
+    }
+    .tasks{
+        
+        margin-top: 1.5rem;
+    }
+    .task{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        background-color:#8f7001;
+        width:14.1rem ;
+        border: 1px solid black;
+        margin-right: 2rem;
+        color: white;
+        padding:.5rem;
+        border-radius: 5px;
+
+    }
+    
+    .content p{
+        margin-left: .3rem;
+    }
+    .task{
+        color: red;
+    }
+

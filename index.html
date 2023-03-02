@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>To do list</title>
 </head>
+
 <body>
     <div class="container">
         <form action="">
-            <input type="text" placeholder="Enter task">
-            <button class="button"id="task">+</button>
+            <input type="text" placeholder="Enter task" id="enterTask">
+            <button class="button" id="addTask" type="submit">+</button>
         </form>
-        <ul class="tasks">
+        <ul class="tasks" id="tasksContainer">
             <li class="task">
                 <div class="content">
-                    <input type="checkbox" name="" id="">
-                <p>call mom</p>
-            </div>
-            <i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-            <li class="task">
-                <div class= "content">
-                    <input type="checkbox" name="" id="">
-                <p>pick up laundry</p>
-            </div>
-            <i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-            <li class="task">
-                <div class="content">
-                    <input type="checkbox" name="" id="">
-                <p>meeting with new team</p>
-            </div>
-            <i class="fa fa-trash" aria-hidden="true"></i>
-            </li>
-            <li class="task">
-                <div class="content">
-                    <input type="checkbox" name="" id="">
-                <p>lunch</p>
+                    <input type="checkbox" name="" id="check">
+                    <p>call mom</p>
                 </div>
-                <i class="fa fa-trash" aria-hidden="true"></i>
+                <i class="fa fa-trash delete " aria-hidden="true" id="DeleteIcon"></i>
+            </li>
+            <li class="task">
+                <div class="content">
+                    <input type="checkbox" name="" id="check">
+                    <p>pick up laundry</p>
+                </div>
+                <i class="fa fa-trash delete" aria-hidden="true" id="DeleteIcon"></i>
+            </li>
+            <li class="task">
+                <div class="content">
+                    <input type="checkbox" name="" id="check">
+                    <p>meeting with new team</p>
+                </div>
+                <i class="fa fa-trash delete" aria-hidden="true" id="DeleteIcon"></i>
+            </li>
+            <li class="task">
+                <div class="content">
+                    <input type="checkbox" name="" id="check">
+                    <p>lunch</p>
+                </div>
+                <i class="fa fa-trash delete" aria-hidden="true" id="DeleteIcon"></i>
             </li>
         </ul>
     </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
